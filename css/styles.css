@@ -1,8 +1,7 @@
 * {
   background-color:#FA5656;
   box-sizing: border-box;
-    border:0;
-    margin: 0;
+   
 
 }
 h1 {
@@ -24,6 +23,9 @@ p{
   padding: 5px;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+}
+.container{
+    width: 100%;
 }
 h1.tittle1{
     margin-top: -3px;  
@@ -54,6 +56,9 @@ float: none;
     background-color: #FA5656;
     border: 2px solid white;
 }
+.navbar-brand, .nav  {
+  padding: 20px 20px;
+}
 section p a, section p a:hover, section p a:focus {
             text-decoration: none;
             color: #912900;
@@ -62,15 +67,21 @@ section p a, section p a:hover, section p a:focus {
             font-size: 1em;
         }
 
+
 @media (min-width: 992px) {
   .box1, .box2, .box3 
   {
     float: left;
     width: 33.33%;
   }
-  nav
+.container {
+    max-width: 100%;
+}
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 300px) and (max-width: 991px) {
+.container {
+    max-width: 100%;
+}
   .box1, .box2{
     float: left;
     width: 50%;
@@ -79,3 +90,4 @@ section p a, section p a:hover, section p a:focus {
     float: left;
     width: 100%;
   }
+}
